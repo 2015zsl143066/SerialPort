@@ -1,0 +1,10 @@
+F:\Code\SerialPort\SerialPortCommunication\bin\Release\SerialPortCommunication.exe.config
+F:\Code\SerialPort\SerialPortCommunication\bin\Release\SerialPortCommunication.exe
+F:\Code\SerialPort\SerialPortCommunication\bin\Release\SerialPortCommunication.pdb
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\SerialPortCommunication.csprojResolveAssemblyReference.cache
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\PCComm.AboutBox.resources
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\PCComm.frmMain.resources
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\PCComm.Properties.Resources.resources
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\SerialPortCommunication.csproj.GenerateResource.Cache
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\SerialPortCommunication.exe
+F:\Code\SerialPort\SerialPortCommunication\obj\Release\SerialPortCommunication.pdb
