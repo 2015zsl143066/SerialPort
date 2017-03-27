@@ -76,10 +76,39 @@ namespace PCComm
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cycleLable = new System.Windows.Forms.Label();
+            this.cycle = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.AnnealDuration = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.AnnealTemprature = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ExtendDuration = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ExtendTemprature = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.start = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
+            this.test = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cycle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnnealDuration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnnealTemprature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtendDuration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtendTemprature)).BeginInit();
             this.SuspendLayout();
             // 
             // cboData
@@ -318,7 +347,7 @@ namespace PCComm
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(688, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(759, 25);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -521,11 +550,260 @@ namespace PCComm
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // cycleLable
+            // 
+            this.cycleLable.AutoSize = true;
+            this.cycleLable.Location = new System.Drawing.Point(370, 382);
+            this.cycleLable.Name = "cycleLable";
+            this.cycleLable.Size = new System.Drawing.Size(41, 12);
+            this.cycleLable.TabIndex = 11;
+            this.cycleLable.Text = "周期：";
+            this.cycleLable.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // cycle
+            // 
+            this.cycle.Location = new System.Drawing.Point(428, 380);
+            this.cycle.Name = "cycle";
+            this.cycle.Size = new System.Drawing.Size(120, 21);
+            this.cycle.TabIndex = 12;
+            this.cycle.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(578, 382);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 12);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "次";
+            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(138, 476);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "低温退火";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // AnnealDuration
+            // 
+            this.AnnealDuration.Location = new System.Drawing.Point(465, 472);
+            this.AnnealDuration.Name = "AnnealDuration";
+            this.AnnealDuration.Size = new System.Drawing.Size(120, 21);
+            this.AnnealDuration.TabIndex = 15;
+            this.AnnealDuration.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(215, 475);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 12);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "温度";
+            // 
+            // AnnealTemprature
+            // 
+            this.AnnealTemprature.Location = new System.Drawing.Point(268, 473);
+            this.AnnealTemprature.Name = "AnnealTemprature";
+            this.AnnealTemprature.Size = new System.Drawing.Size(120, 21);
+            this.AnnealTemprature.TabIndex = 17;
+            this.AnnealTemprature.Value = new decimal(new int[] {
+            55,
+            0,
+            0,
+            0});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(412, 476);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 12);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "时间";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(138, 449);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 12);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "高温变性";
+            this.label10.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(465, 445);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
+            this.numericUpDown1.TabIndex = 15;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(215, 449);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 12);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "温度";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(268, 447);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 21);
+            this.numericUpDown2.TabIndex = 17;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            95,
+            0,
+            0,
+            0});
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(412, 449);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 12);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "时间";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(138, 504);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 12);
+            this.label13.TabIndex = 14;
+            this.label13.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // ExtendDuration
+            // 
+            this.ExtendDuration.Location = new System.Drawing.Point(465, 502);
+            this.ExtendDuration.Name = "ExtendDuration";
+            this.ExtendDuration.Size = new System.Drawing.Size(120, 21);
+            this.ExtendDuration.TabIndex = 15;
+            this.ExtendDuration.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.ExtendDuration.ValueChanged += new System.EventHandler(this.ExtendDuration_ValueChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(215, 504);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 12);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "温度";
+            // 
+            // ExtendTemprature
+            // 
+            this.ExtendTemprature.Location = new System.Drawing.Point(268, 500);
+            this.ExtendTemprature.Name = "ExtendTemprature";
+            this.ExtendTemprature.Size = new System.Drawing.Size(120, 21);
+            this.ExtendTemprature.TabIndex = 17;
+            this.ExtendTemprature.Value = new decimal(new int[] {
+            72,
+            0,
+            0,
+            0});
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(412, 504);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 12);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "时间";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(138, 502);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 12);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "适温延伸";
+            // 
+            // start
+            // 
+            this.start.Location = new System.Drawing.Point(40, 353);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(75, 23);
+            this.start.TabIndex = 20;
+            this.start.Text = "开始";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // stop
+            // 
+            this.stop.Location = new System.Drawing.Point(40, 408);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(75, 23);
+            this.stop.TabIndex = 21;
+            this.stop.Text = "结束";
+            this.stop.UseVisualStyleBackColor = true;
+            this.stop.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // test
+            // 
+            this.test.Location = new System.Drawing.Point(40, 469);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(75, 23);
+            this.test.TabIndex = 22;
+            this.test.Text = "测试";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.Click += new System.EventHandler(this.test_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 349);
+            this.ClientSize = new System.Drawing.Size(759, 607);
+            this.Controls.Add(this.test);
+            this.Controls.Add(this.stop);
+            this.Controls.Add(this.start);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.ExtendTemprature);
+            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.AnnealTemprature);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.ExtendDuration);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.AnnealDuration);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cycle);
+            this.Controls.Add(this.cycleLable);
             this.Controls.Add(this.chkBoxEOL);
             this.Controls.Add(this.cmdClose);
             this.Controls.Add(this.groupBox3);
@@ -545,6 +823,13 @@ namespace PCComm
             this.groupBox2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cycle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnnealDuration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnnealTemprature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtendDuration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtendTemprature)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -599,5 +884,27 @@ namespace PCComm
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Label cycleLable;
+        private System.Windows.Forms.NumericUpDown cycle;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown AnnealDuration;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown AnnealTemprature;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown ExtendDuration;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.NumericUpDown ExtendTemprature;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button start;
+        private System.Windows.Forms.Button stop;
+        private System.Windows.Forms.Button test;
     }
 }

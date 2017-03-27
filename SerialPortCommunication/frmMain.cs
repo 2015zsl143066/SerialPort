@@ -26,6 +26,7 @@ namespace PCComm
 
         private void cmdOpen_Click(object sender, EventArgs e)
         {
+            
             comm.PortName = cboPort.Text;
             comm.Parity = cboParity.Text;
             comm.StopBits = cboStop.Text;
@@ -140,6 +141,41 @@ namespace PCComm
         private void cboPort_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExtendDuration_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test_Click(object sender, EventArgs e)
+        {
+            comm.WriteData("12345");
         }
     }
 }
